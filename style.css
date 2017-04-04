@@ -1,0 +1,129 @@
+
+		.header{
+			display: flex;
+			height: 100px;
+			background: radial-gradient(circle at top, wheat -10%,
+				transparent 80%),linear-gradient(160deg,tomato,transparent), linear-gradient(to right, deeppink,tomato),white;			
+		}
+
+		 .header p, .footer p{        
+             color: white;
+             margin: 0 auto;
+              line-height: 100px;
+              font-size: 3em;
+		}
+		.row{
+			display:flex;
+		}
+		.col{
+			flex:1;
+			background-color: hsla(195,60%,50%,1);
+			background-color: white;
+			border:5px solid tomato ;
+			margin:.6em;
+			padding: .6em;
+			color: gray;
+		}
+
+		 .col h3{
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.footer{
+			display: flex;
+			height: 100px;
+			background: radial-gradient(circle at top, wheat -10%,transparent 80%),linear-gradient(160deg,tomato,transparent), linear-gradient(to right, deeppink,tomato),white;
+			font-size: .4em;
+		}
+		.container{
+			flex: 1;
+		}
+		.wrapper{
+			display: flex;
+			flex-flow: column wrap;
+			min-height: 100vh;
+		}
+		.initialListFlex{			
+			display: flex;
+			 flex-direction: column;       
+		}
+
+		.listFlex{
+            flex: 0;
+            background-color: tomato;
+            color: white;
+            animation: tick 2000ms linear;
+		}
+
+		.listFlex:nth-child(2n){        
+            background-color: #e5a18a;
+		}
+
+		.listFlex input{
+             float: right;
+		}
+
+		.animat{
+			animation: tick 2000ms linear;
+		}
+
+		.animat:before{
+           height: 15px;
+           width: 15px; 
+          content: url("chili1.gif");    
+		}
+
+		@keyframes tick {
+            0% {
+            	transform: scale(0);
+               }  
+            100% {
+            	transform: scale(1);
+                 }
+            }
+           
+     /*      #reverseAnimation{
+			animation: unTick 2000ms linear;			
+		}
+
+            @keyframes unTick {
+            0% {
+            	transform: scale(1);
+               }
+             
+            50% {
+            	transform: scale(0.5);
+                }
+       
+           
+            100% {
+            	transform: scale(0);
+                 }
+            }
+*/
+            #btn{
+            	border:0;
+            	background-color: tomato;
+            	width: 200px;
+            	height: 40px;
+            	color: #fff;
+            	font-size: 20px;
+            	margin-left: 5px;
+            	box-shadow: 0px 10px 15px #888888;           	
+            }
+
+            #finalList li{
+            	list-style: none;         	
+            }
+
+            #delButton{
+
+            	float: right;
+            	border:0;
+            	background-color: tomato;
+            	color: #fff;
+            	box-shadow: 0px 10px 15px #888888;           	
+            	
+
+            }
